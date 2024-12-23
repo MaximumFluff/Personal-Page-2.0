@@ -1,0 +1,13 @@
+{
+  "name": "alex/new-homepage",
+  "authors": [
+    {
+      "name": "Alex Jacobs",
+      "email": "alexander.jacobs@protonmail.ch"
+    }
+  ],
+  "require": {
+    "erusev/parsedown": "^1.7",
+    "league/plates": "^3.6"
+  }
+}
