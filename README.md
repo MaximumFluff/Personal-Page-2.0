@@ -8,6 +8,10 @@ A simple router matches the URL and returns appropriate templates.
 
 ## How to run
 
+Install packages using `composer`:
+
+`composer install`
+
 Run locally utilizing in-built live server:
 
 `php -S localhost:1234`
@@ -24,3 +28,7 @@ Run locally utilizing in-built live server:
 
 - Plates
 - Parsedown
+
+## TODO
+
+- [ ] Code block highlighting for markdown

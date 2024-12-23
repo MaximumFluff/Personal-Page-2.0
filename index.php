@@ -4,7 +4,7 @@ declare(strict_types=1);
 require_once 'vendor/autoload.php';
 // Create new Plates instance
 $templates = new League\Plates\Engine('templates');
-$Parsedown = new Parsedown();
+$Parsedown = new ParsedownExtra();
 // Get URL of http request
 $request = $_SERVER['REQUEST_URI'];
 // Parse JSON FIle
@@ -41,6 +41,7 @@ switch ($request) {
     echo $templates->render('article', ['body' => $Parsedown->text($article), 'metadata' => $article_metadata]);
     break;
   default:
+    // If route not found, return 404
     http_response_code(404);
     echo $templates->render('404');
     break;
